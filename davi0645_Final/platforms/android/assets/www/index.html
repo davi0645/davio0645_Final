@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type='application/javascript' src='Hammer.js'></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="navbar" class="clearfix">
+      <ul>
+        <li class="tab" id="campage"><img src="camera.png" id="camerapic" class="tab"></li>
+        <li class="tab" id="gridpage"><img id="gridlistpic" src="gridlist.png" class="tab"></li>
+      </ul>
+    </div>
+    <div id="pages">
+        <div id="gridview" class="inactive" data-role="page">
+            <div id="outputDiv" data-role="listview">
+            </div>
+        </div>
+        <div id="cameraPage" class="active" data-role="page">
+            <div id="canvasDiv">
+                <canvas id="fullImg" width="400"></canvas>
+            </div>
+            <div id="takePicture"><input type="button" id="takeBtn" value="Take Picture"></div>
+            <form onsubmit="return false;">
+                <input type="text" id="textInput" placeholder="" maxlength="30"><br>
+                <input id="radioTop" name="radio" type="radio" checked = "checked" value="Top">On Top<br>
+                <input id="radioBottom" name="radio" type="radio" value="Bottom">On Bottom<br>
+                <input type="button" id="addText" value="Set Text">
+                <input type="button" id="saveBtn" value="Save Picture">
+            </form>
+        </div>
+    </div>  
+</body>
+</html>

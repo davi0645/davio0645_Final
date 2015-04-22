@@ -1,0 +1,65 @@
+/* CSS Document */
+*{
+	padding:0;
+	margin:0;	
+}
+
+html{
+  overflow:hidden;
+  background-color:#002952;
+  color: #FFFFFF;
+  font-family: Calibri, Arial, Helvetica, sans-serif;
+}
+
+.clearfix {
+	position: absolute;
+	width: 100%;
+  background-color:#000000;
+}
+
+h1 {
+	padding-top: 10px;
+}
+
+#thumbnail {
+  width: 10%;
+}
+
+canvas {
+  width: 50%;
+}
+
+[data-role=page]{
+  position:absolute;
+  z-index:5;
+  padding-top: 3rem;
+}
+
+[data-role=page].active {
+  z-index:6;
+}
+
+[data-role=page].inactive {
+  display:none;
+  z-index:5;
+}
+
+#pages {
+	clear: both;
+}
+
+ul {
+	width: 100%;
+  display: block;
+}
+
+.clearfix li {
+	float: left;
+	display: inline;
+	width: 50%;
+}
+
+li img {
+  display: block;
+  margin: auto;
+}
